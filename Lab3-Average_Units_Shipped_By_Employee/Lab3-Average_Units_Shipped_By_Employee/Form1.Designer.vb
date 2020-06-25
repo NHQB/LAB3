@@ -72,6 +72,7 @@ Partial Class FrmEmployee
         'txtPrint1
         '
         Me.txtPrint1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.txtPrint1.Cursor = System.Windows.Forms.Cursors.No
         Me.txtPrint1.Location = New System.Drawing.Point(29, 126)
         Me.txtPrint1.Multiline = True
         Me.txtPrint1.Name = "txtPrint1"
@@ -83,6 +84,7 @@ Partial Class FrmEmployee
         'txtPrint2
         '
         Me.txtPrint2.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.txtPrint2.Cursor = System.Windows.Forms.Cursors.No
         Me.txtPrint2.Location = New System.Drawing.Point(197, 126)
         Me.txtPrint2.Multiline = True
         Me.txtPrint2.Name = "txtPrint2"
@@ -94,6 +96,7 @@ Partial Class FrmEmployee
         'txtPrint3
         '
         Me.txtPrint3.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.txtPrint3.Cursor = System.Windows.Forms.Cursors.No
         Me.txtPrint3.Location = New System.Drawing.Point(364, 126)
         Me.txtPrint3.Multiline = True
         Me.txtPrint3.Name = "txtPrint3"
