@@ -22,6 +22,7 @@ Partial Class FrmEmployee
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblDay = New System.Windows.Forms.Label()
         Me.lblUnits = New System.Windows.Forms.Label()
         Me.txtInput = New System.Windows.Forms.TextBox()
@@ -38,6 +39,7 @@ Partial Class FrmEmployee
         Me.btnEnter = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'lblDay
@@ -48,6 +50,7 @@ Partial Class FrmEmployee
         Me.lblDay.Size = New System.Drawing.Size(45, 17)
         Me.lblDay.TabIndex = 0
         Me.lblDay.Text = "Day 1"
+        Me.ToolTip.SetToolTip(Me.lblDay, "Display the day of the data")
         '
         'lblUnits
         '
@@ -64,6 +67,7 @@ Partial Class FrmEmployee
         Me.txtInput.Name = "txtInput"
         Me.txtInput.Size = New System.Drawing.Size(100, 22)
         Me.txtInput.TabIndex = 2
+        Me.ToolTip.SetToolTip(Me.txtInput, "Type in the amount of units had been shipped")
         '
         'txtPrint1
         '
@@ -74,6 +78,7 @@ Partial Class FrmEmployee
         Me.txtPrint1.ReadOnly = True
         Me.txtPrint1.Size = New System.Drawing.Size(140, 115)
         Me.txtPrint1.TabIndex = 3
+        Me.ToolTip.SetToolTip(Me.txtPrint1, "Display the units shipped by the employee")
         '
         'txtPrint2
         '
@@ -84,6 +89,7 @@ Partial Class FrmEmployee
         Me.txtPrint2.ReadOnly = True
         Me.txtPrint2.Size = New System.Drawing.Size(141, 115)
         Me.txtPrint2.TabIndex = 4
+        Me.ToolTip.SetToolTip(Me.txtPrint2, "Display the units shipped by the employee")
         '
         'txtPrint3
         '
@@ -94,6 +100,7 @@ Partial Class FrmEmployee
         Me.txtPrint3.ReadOnly = True
         Me.txtPrint3.Size = New System.Drawing.Size(139, 115)
         Me.txtPrint3.TabIndex = 5
+        Me.ToolTip.SetToolTip(Me.txtPrint3, "Display the units shipped by the employee")
         '
         'lblEmployee1
         '
@@ -131,6 +138,7 @@ Partial Class FrmEmployee
         Me.txtAverage1.Size = New System.Drawing.Size(140, 22)
         Me.txtAverage1.TabIndex = 9
         Me.txtAverage1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ToolTip.SetToolTip(Me.txtAverage1, "Display the average units shipped by the employee")
         '
         'txtAverage2
         '
@@ -141,6 +149,7 @@ Partial Class FrmEmployee
         Me.txtAverage2.Size = New System.Drawing.Size(141, 22)
         Me.txtAverage2.TabIndex = 10
         Me.txtAverage2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ToolTip.SetToolTip(Me.txtAverage2, "Display the average units shipped by the employee")
         '
         'txtAverage3
         '
@@ -151,6 +160,7 @@ Partial Class FrmEmployee
         Me.txtAverage3.Size = New System.Drawing.Size(139, 22)
         Me.txtAverage3.TabIndex = 11
         Me.txtAverage3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ToolTip.SetToolTip(Me.txtAverage3, "Display the average units shipped by the employee")
         '
         'txtOverallAverage
         '
@@ -161,6 +171,7 @@ Partial Class FrmEmployee
         Me.txtOverallAverage.Size = New System.Drawing.Size(474, 22)
         Me.txtOverallAverage.TabIndex = 12
         Me.txtOverallAverage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ToolTip.SetToolTip(Me.txtOverallAverage, "The overall average units shipped by the employees")
         '
         'btnEnter
         '
@@ -168,16 +179,19 @@ Partial Class FrmEmployee
         Me.btnEnter.Name = "btnEnter"
         Me.btnEnter.Size = New System.Drawing.Size(75, 34)
         Me.btnEnter.TabIndex = 13
-        Me.btnEnter.Text = "Button1"
+        Me.btnEnter.Text = "&Enter"
+        Me.ToolTip.SetToolTip(Me.btnEnter, "Input the value")
         Me.btnEnter.UseVisualStyleBackColor = True
         '
         'btnReset
         '
+        Me.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnReset.Location = New System.Drawing.Point(224, 315)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(75, 34)
         Me.btnReset.TabIndex = 14
-        Me.btnReset.Text = "Button2"
+        Me.btnReset.Text = "&Reset"
+        Me.ToolTip.SetToolTip(Me.btnReset, "Reset the form")
         Me.btnReset.UseVisualStyleBackColor = True
         '
         'btnExit
@@ -186,13 +200,16 @@ Partial Class FrmEmployee
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(84, 34)
         Me.btnExit.TabIndex = 15
-        Me.btnExit.Text = "Button3"
+        Me.btnExit.Text = "E&xit"
+        Me.ToolTip.SetToolTip(Me.btnExit, "Exit the form")
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'FrmEmployee
         '
+        Me.AcceptButton = Me.btnEnter
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnReset
         Me.ClientSize = New System.Drawing.Size(532, 363)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)
@@ -237,4 +254,5 @@ Partial Class FrmEmployee
     Friend WithEvents btnEnter As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents ToolTip As ToolTip
 End Class
