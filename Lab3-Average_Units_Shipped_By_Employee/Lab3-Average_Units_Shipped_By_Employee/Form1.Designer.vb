@@ -108,9 +108,10 @@ Partial Class FrmEmployee
         'lblEmployee1
         '
         Me.lblEmployee1.AutoSize = True
+        Me.lblEmployee1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEmployee1.Location = New System.Drawing.Point(53, 106)
         Me.lblEmployee1.Name = "lblEmployee1"
-        Me.lblEmployee1.Size = New System.Drawing.Size(82, 17)
+        Me.lblEmployee1.Size = New System.Drawing.Size(92, 17)
         Me.lblEmployee1.TabIndex = 6
         Me.lblEmployee1.Text = "Employee 1"
         '
