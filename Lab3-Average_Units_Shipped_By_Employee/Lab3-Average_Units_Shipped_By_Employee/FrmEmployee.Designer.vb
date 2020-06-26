@@ -200,7 +200,6 @@ Partial Class FrmEmployee
         '
         'btnExit
         '
-        Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.Location = New System.Drawing.Point(391, 315)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(84, 34)
@@ -214,7 +213,7 @@ Partial Class FrmEmployee
         Me.AcceptButton = Me.btnEnter
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.btnExit
+        Me.CancelButton = Me.btnReset
         Me.ClientSize = New System.Drawing.Size(532, 363)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)

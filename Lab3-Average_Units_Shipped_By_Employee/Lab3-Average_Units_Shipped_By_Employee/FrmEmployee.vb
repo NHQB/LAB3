@@ -1,5 +1,4 @@
 ﻿Option Strict On
-Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class FrmEmployee
 #Region "Constants and Variables"
@@ -77,7 +76,7 @@ Public Class FrmEmployee
 #End Region
 
 #Region "Event Handlers"
-    Private Sub Form1(Sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FrmEmployee(Sender As Object, e As EventArgs) Handles MyBase.Load
         inputPrintArray = {txtPrint1, txtPrint2, txtPrint3}
         employeeAverageArray = {txtAverage1, txtAverage2, txtAverage3}
     End Sub
